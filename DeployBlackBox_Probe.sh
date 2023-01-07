@@ -14,5 +14,5 @@ fi
 
 if [ "$2" = "2" ];then
 cd /etc/blackbox_exporter/
-docker run --rm -d -p 9115:9115 --name blackbox_exporter -v `pwd`:/config prom/blackbox-exporter:master --config.file=/config/blackbox.yml
+docker run --rm -d -p 9115:9115 --name blackbox_exporter_2 -v `pwd`:/config prom/blackbox-exporter:master --config.file=/config/blackbox.yml
 fi
